@@ -38,7 +38,7 @@ Internet → Application Load Balancer (Public Subnets) → EC2 Instances (Priva
 
 ### Compute
 
-* 2 EC2 instances (t2.micro)
+* 1 EC2 instances (t2.micro)
 * Amazon Linux 2023 AMI
 * Instances deployed in private subnets
 
@@ -96,9 +96,6 @@ The Nginx server hosts a custom HTML page displaying:
 * EC2 Instance ID
 * Availability Zone
 * Served by Nginx
-
-Instance metadata is retrieved securely using **IMDSv2**.
-
 ---
 
 ## 7. How to Access the Application
@@ -107,12 +104,11 @@ Instance metadata is retrieved securely using **IMDSv2**.
 2. Copy the DNS name of the Application Load Balancer.
 3. Open the DNS name in a web browser.
 
-Example:
+**ALB DNS URL**
 
 ```
-http://devops-alb-xxxx.us-east-1.elb.amazonaws.com
+devops-alb-1870330994.ap-south-1.elb.amazonaws.com
 ```
-
 ---
 
 ## 8. Repository Structure
